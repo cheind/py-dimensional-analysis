@@ -32,6 +32,7 @@ s = da.Solver(
     },
     si.L*si.T                       # target dimension
 )
+print(s.solve())
 \end{lstlisting}
 Which prints
 \begin{lstlisting}
@@ -47,6 +48,9 @@ Found 2 variable products of variables
 \end{lstlisting}
 
 This library is based on \cite{szirtes2007applied}, and also incorporates ideas and examples from \cite{santiago2019first, sonin2001dimensional}.
+
+\subsection{Solver}
+The solver is based on the Buckingham's $\pi$ theorem. For more information, see \cite{szirtes2007applied}.
 
 \subsection{References}
 \bibliographystyle{alpha}
