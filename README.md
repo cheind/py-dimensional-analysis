@@ -22,6 +22,7 @@ s = da.Solver(
     },
     si.L*si.T                       # target dimension
 )
+print(s.solve())
 ```
 
 Which prints
@@ -38,6 +39,9 @@ Which prints
 
 This library is based on (Szirtes 2007), and also incorporates ideas and
 examples from (Santiago 2019; Sonin 2001).
+
+## Solver
+The solver is based on the Buckingham’s *π* theorem. For more information, see (Szirtes 2007).
 
 ## References
 
